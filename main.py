@@ -1,5 +1,4 @@
-import plot_city
-import content_basedRecommendation
+import location_basedRecommendation
 import dataStructureGraph
 import yelpApi
 import timeout_article
@@ -17,12 +16,12 @@ def yes(prompt):
 
 
 def forDetailed_info(num):
-    df,a = content_basedRecommendation.cleanData()
+    df,a = location_basedRecommendation.cleanData()
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get(df['url'][int(num)])
 
 def search_n_display(description):
-    rec = content_basedRecommendation.recommend(description)
+    rec = location_basedRecommendation.recommend(description)
     display = rec.copy()
     display.drop(columns=['reviews','similarity'], inplace=True)
     print(display[:20])
