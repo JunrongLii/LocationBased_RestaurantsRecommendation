@@ -13,14 +13,15 @@ the maximum and calls over 5000 might cause error. After the data was retrived, 
 # cacheRestaurants_info
 The data will be pre-processed after this program was run, it will also be cached into CSV file. 
 
-
 # locationBasedRecommendation
 The data was processed in this program, after it was processed, it also would be cached into CSV file. The similarity between restaurants and similarity
 between restaurants and user's description will be obtained after this program was run.
 
 # dataStructureGraph
-Graph was used as data structure. The nodes represent the name of restaurants, the edges represent the similarity between restaurants. After this 
-program was run, there would a HTML file containing network of restaurants was created and added to the path.
+Graph was used as data structure. The nodes represent the name of restaurants, the edges represent the similarity between restaurants. After this program was run, there would a HTML file containing network of restaurants was created and added to the path.
+
+# timeout_article
+The articles about restaurants would be retrieved from website "https://www.timeout.com/newyork/food-drink" and be cached into JSON file.
 
 
 
